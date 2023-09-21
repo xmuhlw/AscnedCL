@@ -28,9 +28,10 @@ namespace {
     const uint32_t YUV_BYTE_NU = 3;
     const uint32_t YUV_BYTE_DE = 2;
     const uint32_t VPC_H_ALIGN = 2;
-    const uint32_t IMAGE_SIZE = 320;
-    const uint32_t PRE_WIDTH = 384;
-    const uint32_t PRE_HEIGHT = 320;
+    const uint32_t IMAGE_SIZE_HEIGHT = 576;
+    const uint32_t IMAGE_SIZE_WIDTH = 768;
+    const uint32_t PRE_WIDTH = 576;
+    const uint32_t PRE_HEIGHT = 576;
     const int IS_TEST = 0;
     const int TEST_NUM = 9963;
     const int TEST_NAME_LEN = 6;
@@ -185,8 +186,8 @@ APP_ERROR RefineDetDetection::Resize(const MxBase::TensorBase &inputTensor, MxBa
     input.widthStride = shape[1];
     input.dataSize = inputTensor.GetByteSize();
     input.data = (uint8_t*)inputTensor.GetBuffer();
-    const uint32_t resizeHeight = IMAGE_SIZE;
-    const uint32_t resizeWidth = IMAGE_SIZE;
+    const uint32_t resizeHeight = IMAGE_SIZE_HEIGHT;
+    const uint32_t resizeWidth = IMAGE_SIZE_WIDTH;
     MxBase::ResizeConfig resize = {};
     resize.height = resizeHeight;
     resize.width = resizeWidth;
@@ -249,8 +250,8 @@ APP_ERROR RefineDetDetection::PostProcess(const MxBase::TensorBase &tensor,
     MxBase::ResizedImageInfo imgInfo;
     imgInfo.widthOriginal = shape[1];
     imgInfo.heightOriginal = shape[0] * YUV_BYTE_DE / YUV_BYTE_NU;
-    imgInfo.widthResize = IMAGE_SIZE;
-    imgInfo.heightResize = IMAGE_SIZE;
+    imgInfo.widthResize = IMAGE_SIZE_HEIGHT;
+    imgInfo.heightResize = IMAGE_SIZE_WIDTH;
     imgInfo.resizeType = MxBase::RESIZER_STRETCHING;
     std::vector<MxBase::ResizedImageInfo> imageInfoVec = {};
     imageInfoVec.push_back(imgInfo);

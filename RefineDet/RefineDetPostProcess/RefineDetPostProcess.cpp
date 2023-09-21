@@ -40,8 +40,8 @@ namespace {
     const uint32_t RIGHTTOPX = 2;
     const uint32_t RIGHTTOPY = 3;
     const int PRIOR_PARAMETERS[4] = {32, 64, 128, 256};
-    const float IMAGE_WIDTH = 320.0;
-    const float IMAGE_HEIGHT = 320.0;
+    const float IMAGE_WIDTH = 768.0;
+    const float IMAGE_HEIGHT = 576.0;
     const float STEPS[4] = {8.0, 16.0, 32.0, 64.0};
     const float VARIANCE[2] = {0.1, 0.2};
     const uint32_t RECTANGLEPOINT = 4;

@@ -4,13 +4,24 @@
 ### 1. 烧录网口配置Type-C的ip地址为：*192.168.0.2*，子网掩码：*255.255.225.0*，ssh连接时采用烧录时的*192.168.0.2*
 ### 2. 通过笔记本的C口跟开发板连接，同时配置对应的IP地址以及子网掩码；
 ## 准备工作
-### 1. ATC指令转换格式，将ckpt文件转成om格式进行推理；(转换之前先挂载swap分区避免卡死);
-### 2. 本次部署采用的指令为：
-
+### 1. 通过export.py将ckpt文件转成onnx格式，并且可以使用onnxsim来进行简化；
 ```
-atc --model=fourclasses.onnx --framework=5 --output=fourclasses --input_format=NCHW --input_shape="x:1,12,320,320" --log=error --soc_version=Ascend310B1 --output_type=FP16 --input_fp16_nodes='x'
+import onnx
+from onnxsim import simplify
+ONNX_MODEL_PATH = 'E:/下载/our_onnx.onnx'
+ONNX_SIM_MODEL_PATH = './our_onnx_simple.onnx'
+onnx_model = onnx.load(ONNX_MODEL_PATH)  # load onnx model
+model_simp, check = simplify(onnx_model)
+assert check, "Simplified ONNX model could not be validated"
+onnx.save(model_simp, ONNX_SIM_MODEL_PATH)
+print('finished exporting onnx')
 ```
-
+### 2. onnx文件放在开发板上，atc指令执行转换(转换之前先挂载swap分区避免卡死);
+通过python ./YOLOV5/export.py 得到MINDIR再通过atc指令转成om；
+本次部署采用的指令为：
+```
+atc --model=our_onnx_simple.onnx --framework=5 --output=ourmodel_simple --input_format=NCHW --input_shape="x:1,3,576,768" --log=error --soc_version=Ascend310B4 --insert_op_conf=./aipp.cfg
+```
 其中转换参数的含义为：  
 * --model：输入模型路径
 * --framework：原始网络模型框架类型，5表示ONNX
@@ -21,9 +32,8 @@ atc --model=fourclasses.onnx --framework=5 --output=fourclasses --input_format=N
 * --soc_version：昇腾AI处理器型号
 * --input_fp16_nodes：指定输入数据类型为FP16的输入节点名称
 * --output_type：指定网络输出数据类型或指定某个输出节点的输出类型
-
+* --insert_op_conf：aipp使能，提前对数据进行预处理
 ### 3. 得到om模型后修改对应的部署代码开始执行推理；
-
 ## Python基础实现(main_python.ipynb)
 ### Step1：模型图片预处理，这边要把输入图片的类型转成与模型相对应的(1,12,320,320)，因为yolov5s中原始640*640*3的图像输入Focus结构，采用切片操作，先变成320*320*12的特征图，转成tensor类型处理时要转成float16对应；
 ### Step2: 载入对应的om文件以及输入img，得到output，这边output包括了大中小三个锚框，其中19200 = anchor_num(3) * grid_h(80) * grid_w(80),大框的尺寸是80*80；然后按照输入图片的尺寸做相应的转换，这边orig_h = orig_w = 640,所以输入图片的尺寸要做调整对应640*640，否则出现框对不上！
@@ -32,9 +42,10 @@ atc --model=fourclasses.onnx --framework=5 --output=fourclasses --input_format=N
 cfg = {
     'conf_thres': 0.25,  # 模型置信度阈值，阈值越低，得到的预测框越多
     'iou_thres': 0.4,  # IOU阈值，高于这个阈值的重叠预测框会被过滤掉
-    'input_shape': [640,640],  # 模型输入尺寸
+    'input_shape': [576,768],  # 模型输入尺寸
 }
 ```
+
 ## C++基础实现(main_python.ipynb)
 ### 1. 首先是aipp的配置使用，可以提前对AI推理的输入数据进行预处理的模块;所以这边要对我们的模型的ckpt转成onnx,ckpt2onnx.py代码，转成类型应该是 1，12，320，320
 ---
@@ -46,7 +57,7 @@ cfg = {
 ``` 
 git clone https://gitee.com/mindspore/models.git -b r2.0.0-alpha
 cp -r models/official/cv/YOLOv5 ./
-```
+```-
 ### 2. 通过modelarts的obs工具上传我们的数据，并且通过python来解压，因为自带的unzip指令无法解压超过5G的数据，并且数据与coco2017格式对应；
 ```
 import zipfile
@@ -71,17 +82,9 @@ cd third_party&&bash build.sh
 pip install pycocotools==2.0.5
 ```
 * 启动指令，其中多卡hccl通信文件目录在/user/config/nbstart_hccl.json；
-```as
+```
 cd scripts
 bash ./run_distribute_train.sh /home/ma-user/work/data9705-2/images /user/config/nbstart_hccl.json 
 ```
 ---
 ---
-## Modelarts训练Mindyolo，采用mindspore 1.9.1的镜像；
-首先创建好8卡的资源后通过notebook连接服务器；
-### 1. git载入对应的MindSpore的版本的模型，放在根目录；
-```
-git clone https://github.com/mindspore-lab/mindyolo.git -b r0.1 #MindSpore2.1之前不支持在910B上运行，另外910B的支持在逐步添加中,因此用r0.1的分支对应1.9.1的版本；
-```
-### 2. 从obs桶加载数据集，并且要对数据进行处理，符合mindyolo的格式；
-* 

@@ -19,5 +19,5 @@ if __name__ == "__main__":
             # save_txtfile.write(os.path.join(root,file) + ' ' + str(i) +'\n')
             save_txtfile.write(os.path.join(root,file) +'\n')
     print('The files path of ' + str(pic_path) + 'has already written to' + str(save_txtfile) )
-    save_txtfile.close();
+    save_txtfile.close():
 
