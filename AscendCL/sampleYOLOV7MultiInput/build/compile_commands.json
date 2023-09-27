@@ -1,0 +1,127 @@
+[
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/dataInput/dataInput.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/dataInput/dataInput.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/dataInput/dataInput.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/detectPreprocess/detectPreprocess.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/detectPreprocess/detectPreprocess.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/detectPreprocess/detectPreprocess.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/detectInference/detectInference.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/detectInference/detectInference.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/detectInference/detectInference.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/detectPostprocess/detectPostprocess.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/detectPostprocess/detectPostprocess.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/detectPostprocess/detectPostprocess.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/dataOutput/dataOutput.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/dataOutput/dataOutput.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/dataOutput/dataOutput.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/pushrtsp/pictortsp.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/pushrtsp/pictortsp.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/pushrtsp/pictortsp.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/pushrtsp/pushrtspthread.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/pushrtsp/pushrtspthread.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/pushrtsp/pushrtspthread.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/main.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/main.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/main.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/__/common/src/AclLiteApp.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/AclLiteApp.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/AclLiteApp.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/__/common/src/AclLiteImageProc.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/AclLiteImageProc.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/AclLiteImageProc.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/__/common/src/AclLiteModel.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/AclLiteModel.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/AclLiteModel.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/__/common/src/AclLiteResource.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/AclLiteResource.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/AclLiteResource.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/__/common/src/AclLiteThread.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/AclLiteThread.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/AclLiteThread.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/__/common/src/AclLiteThreadMgr.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/AclLiteThreadMgr.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/AclLiteThreadMgr.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/__/common/src/AclLiteUtils.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/AclLiteUtils.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/AclLiteUtils.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/__/common/src/AclLiteVideoProc.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/AclLiteVideoProc.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/AclLiteVideoProc.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/__/common/src/CropAndPasteHelper.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/CropAndPasteHelper.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/CropAndPasteHelper.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/__/common/src/JpegDHelper.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/JpegDHelper.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/JpegDHelper.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/__/common/src/JpegEHelper.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/JpegEHelper.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/JpegEHelper.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/__/common/src/PngDHelper.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/PngDHelper.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/PngDHelper.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/__/common/src/ResizeHelper.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/ResizeHelper.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/ResizeHelper.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/__/common/src/VdecHelper.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/VdecHelper.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/VdecHelper.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/__/common/src/VencHelper.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/VencHelper.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/VencHelper.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/__/common/src/VideoCapture.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/VideoCapture.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/VideoCapture.cpp"
+},
+{
+  "directory": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DENABLE_DVPP_INTERFACE -I/home/HwHiAiUser/Ascend/ascend-toolkit/latest/runtime/include -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../inc -I/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/src/../common/include -fPIC -O0 -g -Wall -std=c++11 -o CMakeFiles/main.dir/__/common/src/VideoWriter.cpp.o -c /home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/VideoWriter.cpp",
+  "file": "/home/HwHiAiUser/sample/samples-master/inference/modelInference/sampleYOLOV7MultiInput/common/src/VideoWriter.cpp"
+}
+]
