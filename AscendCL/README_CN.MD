@@ -1,3 +1,18 @@
+ # 模型训练
+ ### 训练环境配置--yolov7：
+ #### 1) 采用官方库并配置环境，根据requirements.txt装相关的库；
+ ```
+ git clone https://github.com/WongKinYiu/yolov7.git
+ ```
+ #### 2) 修改 ./yolov7/data/coco.yaml，将对应的数据集路径，labels，类别数做调整，如果数据集格式COCO可以采用整理好的一些工具转成YOLO格式
+ #### 3）模型执行训练，可以加载预训练权重，把pretrain设置为严格加载即可；
+ ```
+ python train.py --workers 8 --device 0 --batch-size 32 --data data/coco.yaml --img 640 640 --cfg cfg/training/yolov7.yaml --weights '' --name yolov7 --hyp data/hyp.scratch.p5.yaml
+ ```
+ #### 4）模型转成ONNX导出，这边不带NMS后处理；
+ ```
+ python export.py --weights best.pt --grid --simplify  --topk-all 100 --img-size 640 640 --max-wh 640
+ ```
 
 # AscendCL部署
 ---
@@ -88,6 +103,11 @@ bash sample_run.sh
 执行 ./live555MediaServer
 在scripts的test.json文件改对应的input_data以及input_type即可
 ```
+### 替换自己的模型：
+#### 1）得到训练的ONNX后执行atc转换指令，挂载aipp做处理，--soc_version=Ascend310B4，--framework=5;
+#### 2）推理代码修改
+* /inc/lables.h，标签头文件修改为自己的类别，NC设置为5；
+* /src/detectPostprocess.cpp，classNum做修改，对图像后处理部分进行优化调整;
 
 
- 
+
